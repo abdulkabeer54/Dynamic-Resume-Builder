@@ -1,0 +1,291 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f8fa;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Heading Styling */
+#heading {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInText 2s ease-out;
+    margin-bottom: 40px;
+}
+
+/* Container Styling */
+.container, #resumePage {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Form and Input Styling */
+form div {
+    margin-bottom: 1.75em;
+}
+
+label {
+    font-weight: 500;
+    color: #34495e;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #ccd6e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #f4f6f9;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+    color: #333;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+textarea {
+    min-height: 150px;
+}
+
+/* Button Styling */
+button {
+    padding: 14px 28px;
+    margin-top: 25px;
+    border: none;
+    background: linear-gradient(135deg, #2980b9, #1abc9c);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1abc9c, #2980b9);
+    transform: translateY(-4px);
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Image Styling */
+#resumePage img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 30px auto;
+    border: 5px solid #f39c12;
+    transition: all 0.3s ease;
+}
+
+#resumePage img:hover {
+    border-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+#resumePage .section {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #ececec;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#resumePage .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+#resumePage h2, #resumePage p {
+    margin: 0.8em 0;
+    padding: 0.6em;
+    border-radius: 8px;
+    color: #34495e;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#resumePage h2:hover, #resumePage p:hover {
+    background-color: #ecf0f1;
+    color: #2980b9;
+}
+
+/* Resume Content */
+.resume-content h1 {
+    text-align: center;
+    color: #16a085;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.resume-content h2 {
+    color: #8e44ad;
+    text-align: left;
+    margin-top: 25px;
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #8e44ad;
+    padding-bottom: 10px;
+}
+
+.resume-content p {
+    color: #34495e;
+    line-height: 1.7;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Resume Experience Section */
+.resume-content .experience, .resume-content .education {
+    margin-top: 30px;
+}
+
+.resume-content .experience h3, .resume-content .education h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #3498db;
+}
+
+.resume-content .experience p, .resume-content .education p {
+    font-size: 1em;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Skills Section */
+.resume-content .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-content .skills li {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1em;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.resume-content .skills li:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+footer a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container, #resumePage {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    #heading {
+        font-size: 38px;
+    }
+
+    .resume-content h1 {
+        font-size: 30px;
+    }
+
+    .resume-content h2 {
+        font-size: 1.3em;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+
+    .resume-content .skills li {
+        font-size: 0.9em;
+        margin: 3px;
+    }
+}
